@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br" 
+style="scroll-behavior: smooth !important;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Portfólio</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <header class="cabecalho">
+
+      <nav class="redes-sociais">
+        <a href="https://github.com/microonda" target="_blank" rel="external">
+          <img src="logos/github-icon.png" alt="logo-github" class="botao-github">
+        </a>
+        <a href="https://www.linkedin.com/in/felipe-bmda/" alt="linkedin" target="_blank" rel="external">
+            <img src="logos/linkedin-icon.png" alt="logo-linkedin" class="botao-linkedin">
+        </a>
+      </nav>
+
+      <a href="main.html" class="logo">
+        <h1>Felipe Borges</h1>
+      </a>
+      <nav>
+        <ul class="navlist">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre-mim">Sobre Mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="bg1"></div>
+    <div class="container">
+      <div class="estatico">Eu sou</div>
+      <ul class="dinamico">
+        <li><span>Dev Web</span></li>
+        <li><span>Dev Python</span></li>
+        <li><span>Professor</span></li>
+        <li><span>Estudante</span></li>
+      </ul>
+    </div>
+    
+    <button onclick="topFuncao()" id="voltar">
+      <div class="seta"></div>
+    </button>
+
+
+    <main>
+      <section id="sobre-mim">
+
+        <h2>Sobre Mim</h2>
+        
+        <h3>Introdução</h3>
+          <p>Me chamo Felipe Borges Mendes de Assis, tenho 18 anos e sou um jovem desenvolvedor apaixonado por tecnologia.</p>
+
+
+        <h3>Formações</h3>
+        <p>Sempre fui interessado por T.I. e todo tipo de automação</p>
+        <p>E ao longo dessa jornada conquistei e concluí alguns (vários) cursos</p>
+        <article class="imagens">
+          <div id="certificados">
+            <a href="certificados/150LDP1S2020-CERTIFICADO_(clique_aqui_para_salvar_o_certificado_do_curso)_457115.pdf" download target="_blank">
+            <img src="certificados/logica_de_programacao.jpg" alt="senai logica_de_programacao" class="certificados"></a>
+
+            <a href="certificados/Felipe-Borges-Python-3-8211-Mundo-1-40-Horas-Certificado-Curso-em-Video.pdf" download target="_blank"><img src="certificados/mundo1.jpg" alt="" class="certificados"></a>
+
+            <a href="certificados/frente.jpg" download target="_blank"><img src="certificados/frente.jpg" alt="" class="certificados"></a>
+          </div>
+        </article>
+        <p>Atualmente estou cursando Análise e Desenvolvimento de Sistemas na Faculdade na FATEC, atualmente na unidade do Ipiranga.</p>
+        <p>Lá adiquiro algumas proficiências úteis, que valem ser mencionadas, como por exemplo:</p>
+
+          <article class="imagens">
+            <div class="linguagens">
+              <img src="logos/vba.png" alt="vba logo" class="linguagens">
+              <img src="logos/excel.png" alt="excel logo" class="linguagens" style="width: auto;">
+              <img src="logos/C.png" alt="c logo" class="linguagens">
+            </div>
+          </article>
+
+        <h3>Tecnologias</h3>
+          <p>Quando fora da faculdade, gosto de estudar algumas<strong> linguagens</strong> e <strong>frameworks </strong>como:</p>
+
+          <strong>
+            <p>Python 3, JavaScript, Flask e MYSQL:</p>
+          </strong>
+
+          <article class="imagens">
+            <div class="linguagens">
+              <img src="logos/Python-logo.png" alt="python-logo" class="linguagens">
+              <img src="logos/javascriptlogo.png" alt="js-logo" class="linguagens">
+              <img src="logos/flasklogo1.jpg" alt="flask-logo" class="linguagens">
+              <img src="logos/MySQL-Logo.png" alt="mysql-logo" class="linguagens">
+            </div>
+          </article>
+      
+
+      </section>
+
+      <section id="projetos">
+        <h2>Projetos</h2>
+        <p> Atualmente ando construindo e condensando meu conhecimento através de vários projetos <strong>como estes a seguir:</strong></p>
+        <ul class="projetos">
+          <li>
+            <a href="https://microonda.github.io/multiplicacao/index.html" target="_blank">Jogo de Multiplicação</a>
+            <p>Jogo de multiplicação em um site simples feito em HTML5+CSS3+JS</p>
+          </li>
+          <li>
+            <a href="#">Projeto 2</a>
+            <p>Descrição do projeto 2</p>
+          </li>
+          <li>
+            <a href="#">Projeto 3</a>
+            <p>Descrição do projeto 3</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="creditos-ia">
+        <a href="https://www.bluewillow.ai/" target="_blank" rel="alternate"><img src="logos/bluewillowlogo.jpg" alt="logobluewilow" class="logoblue">
+        <p>Blue Willow</p>
+        <p style="letter-spacing: normal";></p></a>
+        <p>Imagens Geradas com I.A.</p>
+      </div>
+
+
+      <div class="creditos-ia">
+        <a href="https://chat.openai.com/"
+        target="_blank" rel="alternate"><img src="logos/ChatGPT_logo.png" alt="logo-chatgpt" class="logoblue">
+        <p>Chat GPT</p>
+        <p style="letter-spacing: normal";></p></a>
+        <p>Dúvidas Sanadas por I.A.</p>
+      </div>
+
+
+    </footer>
+  </body>
+</html>
