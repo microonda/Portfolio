@@ -180,22 +180,6 @@ h2{
 #full-sobre-mim {
     display: flex;}
 
-.foto{
-    background-image: url(imagens/felipe.png);
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 50%;
-    background-position-y: bottom;
-
-    display: flex;
-    height: 90vh;
-    width: 40vw;
-    border: 2px solid #04e100;
-    border-radius: 10%;
-    background-color: #060811;
-}
-
 #sobre-mim .apresentacao p{
     display: inline-block;
 }
@@ -235,22 +219,32 @@ h2{
 }
 
 .linguagens {
-    filter: grayscale(100%);
     padding: 2em;
-    margin: auto;
-    margin-left: 7em;
     display: flex;
-    justify-items: center;
-    width: 100px;
-    height: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
-.linguagens:hover{
+.linguagem{
+    display: flexbox;
+    
+    width: 120px;
+    height: 120px;
+    
+    align-self: center;
+    justify-self: center;
+    transition: 0.3s;
+    margin: 2em;
+    filter: grayscale(100%);
+}
+
+.linguagem:hover{
     margin-top: 0;
     padding-left: 20px;
-    height: 125px;
-    width: 125px;
-    transition: 0.3s;
+    height: 150px;
+    width: 150px;
+
+    transform: translate(-5px, -5px);
     filter: grayscale(0%);
     cursor: pointer;
 }
