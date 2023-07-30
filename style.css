@@ -278,7 +278,6 @@ h2{
     background-color: darkgreen;
 }
 
-
 h3{
     padding: 10px;
 }
@@ -286,7 +285,6 @@ h3{
 
 #projetos{
     padding: 2em;
-    padding-top: 2em;
     font-size: 35px;}
 
 .projetos{
@@ -299,31 +297,37 @@ h3{
     padding: 1em}
 
 .projetos a{
-    font-size: 40px;
+    font-size: 42px;
     color: #059862;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#projetos img {
+    margin: 1em;
+    border-radius: 5px;
+    height: 400px;
+    width: 600px;
 }
 
 /*Formulário*/
 
-#contato {
-    padding-top: 4em;
-    text-align: center;
-}
-
 #contato h2 {
-margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 form {
-color: #ECECF1;
-max-width: 500px;
-margin: 0 auto;
+    color: #ECECF1;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 label {
-display: block;
-margin-bottom: 10px;
-font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 input,
@@ -339,7 +343,7 @@ textarea {
 }
 
 button[type="submit"]:hover {
-background-color: #45a049;
+    background-color: #45a049;
 }
 
 button[type="submit"] {
@@ -354,8 +358,8 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-background-color: #45a049;
-box-shadow: 0px 3px 7px rgba(0,0,0,0.7);
+    background-color: #45a049;
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.7);
 }
 
 
