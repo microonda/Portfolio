@@ -1,3 +1,18 @@
+function copiar(texto, mensagem) {
+    navigator.clipboard.writeText(texto)
+    .then(() => {
+        alert(mensagem + ' copiado: ' + texto);
+    })
+    .catch(err => {
+        console.error('Erro ao copiar para a área de transferência: ', err);
+    });
+}
+
+function copiarEmail() { copiar('felipeborgesmooca@gmail.com', 'Endereço de e-mail') }
+function copiarTelefone() { copiar('(11) 93388-7185', 'Telefone (whatsapp)') }
+
+// aparecer sections
+
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section');
   
