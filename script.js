@@ -1,4 +1,19 @@
-
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section');
+  
+    const isTopInViewport = e => e.getBoundingClientRect().top <= (window.innerHeight || document.documentElement.clientHeight);
+    const handleScroll = () => sections.forEach(sec => isTopInViewport(sec) ? showSection(sec) : null);
+  
+    const showSection = sec => {
+      sec.style.display = 'block';
+      sec.style.opacity = '1';
+      sec.style.transform = 'translateY(0)';
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+  });
+  
 window.onscroll = function() {scrollFuncao()};
 
 function scrollFuncao() {

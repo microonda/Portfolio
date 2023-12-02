@@ -1,0 +1,87 @@
+@import url(style.css);
+
+section {
+  opacity: 1;
+  transform: translateY(-20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+
+  margin-top: 1.5rem;
+  border-bottom: 2px solid #a500e16a;
+  border-top: solid 2px #9200e1;
+}
+
+header {
+  border-bottom: solid 2px #9200e1b1;
+}
+strong {
+  font-weight: 600;
+  color: #b000e1;
+}
+.bg1, #bg1 {
+  width: 100%;
+  background-image: url(../imgs/auroraverde.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #9200e1;
+}
+
+
+.projeto-galeria {
+	list-style: none;
+	margin: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+}
+.projeto-card .certificados{
+    width: 100vw;
+}
+
+/* Cards do projeto */
+.projeto-card {
+	position: relative;
+	transition: transform 0.3s;
+	cursor: pointer;
+}
+
+.projeto-card p{
+	margin: 20px 0;
+}
+
+.projeto-card:hover {
+	transform: scale(1.1);
+}
+.projeto-card a{
+	text-decoration: none;
+}
+
+.projeto-card img {
+	width: 15.16rem;
+	height: 15.6rem;
+	object-fit: cover;
+	border-radius: 8px;
+}
+#projetos{
+	background: linear-gradient(rgb(14, 6, 48), rgb(15, 20, 40));
+}
+
+@media (max-width: 650px) {
+	.certificados:hover{
+		transform: scale(1.05);
+	}
+	h2{
+		font-size: xx-large;
+	}
+	p{
+		font-size: larger;
+	}
+	.projeto-galeria{
+		grid-template-columns: 1fr;
+	}
+	.projeto-card .certificados{
+		max-width: 100%;
+		width: 100%;
+	}
+}
