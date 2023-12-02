@@ -169,6 +169,10 @@ section{
   transform: scale(1.1); /* ou qualquer valor que você achar adequado */
 }
 
+main .bg1{
+  background: linear-gradient(rgb(15, 20, 40), rgba(3, 53, 14, 0.619));
+}
+
 
 .linguagens {
   margin-top: 2rem;
